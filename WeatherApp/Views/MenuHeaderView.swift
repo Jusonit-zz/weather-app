@@ -22,8 +22,7 @@ struct MenuHeaderView: View {
             cityVM.city = searchTerm
         } label: {
             ZStack {
-                RoundedRectangle(cornerRadius: 10).fill(Color.blue)
-                
+                RoundedRectangle(cornerRadius: 10).fill(Color.green)
                 Image(systemName: "location.fill")
             }
         }
@@ -33,7 +32,7 @@ struct MenuHeaderView: View {
         .padding()
         .background(ZStack (alignment: .leading) {
             Image(systemName: "magnifyingglass")
-                .foregroundColor(.white)
+                .foregroundColor(.black)
                 .padding(.leading, 10)
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.blue.opacity(0.5))
