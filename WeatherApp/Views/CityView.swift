@@ -16,11 +16,12 @@ struct CityView: View {
         VStack {
             CityNameView(city: cityVM.city, date: cityVM.date)
                 .shadow(radius: 0)
+            HourlyWeatherView(cityVM: cityVM)
+            Spacer()
             TodayWeatherView(cityVM: cityVM)
                 .padding()
             Spacer()
-            HourlyWeatherView(cityVM: cityVM)
-            Spacer()
+            
             DailyWeatherView(cityVM: cityVM)
         }.padding(.bottom, 30)
     }
