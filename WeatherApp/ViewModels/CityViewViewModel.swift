@@ -29,13 +29,13 @@ final class CityViewViewModel: ObservableObject {
     
     private lazy var dayFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "AAA" //3 letter day
+        formatter.dateFormat = "EEE" //3 letter day
         return formatter
     }()
     
     private lazy var timeFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "hh m"
+        formatter.dateFormat = "h:mm a"
         return formatter
     }()
     
