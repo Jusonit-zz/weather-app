@@ -9,29 +9,33 @@
 import SwiftUI
 
 struct DailyWeatherView: View {
-    
     @ObservedObject var cityVM: CityViewViewModel
-    
+
     var body: some View {
         ForEach(cityVM.weather.daily) { weather in
             LazyVStack {
-                dailyCell(weather: weather)
+              NavigationLink(destination: WeatherDetailView(cityVM: self.cityVM)) {
+                VStack {
+                  dailyCell(weather: weather)
+                }
+              }
             }
         }
     }
+
     private func dailyCell(weather: DailyWeather) -> some View {
         HStack {
             Text(cityVM.getDayFor(timestamp: weather.dt).uppercased())
                 .frame(width: 50)
             Spacer()
-            
+
             Text("\(cityVM.getTempFor(temp: weather.temp.max)) | \(cityVM.getTempFor(temp: weather.temp.min)) ℉")
                 .frame(width: 150)
             Spacer()
-            
+
             cityVM.getWeatherIcon(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
         }
-        .foregroundColor(.white)
+        .foregroundColor(.white)  
         .padding(.horizontal, 40)
         .padding(.vertical, 15)
         .background(RoundedRectangle(cornerRadius: 5).fill(LinearGradient(gradient: Gradient(colors: [Color(.blue), Color(.gray), Color(.blue)]), startPoint: .topLeading, endPoint: .bottomTrailing)))

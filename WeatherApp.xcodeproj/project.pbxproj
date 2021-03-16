@@ -35,6 +35,7 @@
 		C9D9B6A1260096C500B4D79A /* WeatherDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9B6A0260096C400B4D79A /* WeatherDetails.swift */; };
 		C9D9B6A6260096EB00B4D79A /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9B6A5260096EB00B4D79A /* DailyWeather.swift */; };
 		C9D9B6AB2600970A00B4D79A /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9B6AA2600970A00B4D79A /* Temperature.swift */; };
+		F205431D260108DC004E89A3 /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205431C260108DC004E89A3 /* WeatherDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		C9D9B6A0260096C400B4D79A /* WeatherDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetails.swift; sourceTree = "<group>"; };
 		C9D9B6A5260096EB00B4D79A /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		C9D9B6AA2600970A00B4D79A /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		F205431C260108DC004E89A3 /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				C9D9B6872600960600B4D79A /* HourlyWeatherView.swift */,
 				C9D9B68C2600962800B4D79A /* DailyWeatherView.swift */,
 				C9D9B6912600963F00B4D79A /* CityView.swift */,
+				F205431C260108DC004E89A3 /* WeatherDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				C9D9B66A2600952D00B4D79A /* NetworkManager.swift in Sources */,
 				C9D9B660260094C500B4D79A /* API.swift in Sources */,
 				C9D9B6882600960600B4D79A /* HourlyWeatherView.swift in Sources */,
+				F205431D260108DC004E89A3 /* WeatherDetailView.swift in Sources */,
 				C9D9B68D2600962800B4D79A /* DailyWeatherView.swift in Sources */,
 				C9D9B67E260095BC00B4D79A /* CityNameView.swift in Sources */,
 				C9D9B6742600957500B4D79A /* LottieView.swift in Sources */,

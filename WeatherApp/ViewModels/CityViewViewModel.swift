@@ -15,7 +15,7 @@ final class CityViewViewModel: ObservableObject {
     
     //observable object - announced when changed
     @Published var weather = WeatherResponse.empty()
-    @Published var city: String = "New York" {
+    @Published var city: String = "" {
         didSet {
             getLocation()
         }
@@ -84,7 +84,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     func getTempFor(temp: Double) -> String {
-        return String(format: "%0.2f", temp)
+        return String(format: "%0.1f", temp)
     }
     
     func getDayFor(timestamp: Int) -> String {

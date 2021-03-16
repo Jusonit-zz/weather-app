@@ -12,11 +12,12 @@ struct MenuHeaderView: View {
     //reload in different views
     @ObservedObject var cityVM: CityViewViewModel
     //when state value changes, the view recomputes
-    @State private var searchTerm = "New York"
+    @State private var searchTerm = ""
     
     var body: some View {
         HStack {
-            TextField("", text: $searchTerm).padding(.leading, 20)
+          TextField("City Name", text: $searchTerm)
+            .padding(.leading, 20)
         
         Button {
             cityVM.city = searchTerm
